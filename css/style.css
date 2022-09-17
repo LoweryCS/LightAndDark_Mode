@@ -1,0 +1,31 @@
+/*Declares variables*/
+:root {
+    --div-background-color: red;
+    --text-color: black;
+    --div-padding: 20px;
+    --div-margin: 10px;
+}
+
+body {
+    background-color: var(--background-color, rgb(94, 183, 241));
+}
+
+.child {
+    background-color: var(--div-background-color);
+    color: var(--text-color);
+}
+
+.one {
+    --div-background-color: blue;
+    --text-color: white;
+}
+
+.one-one {
+    margin: var(--div-margin);
+    padding: var(--div-padding);
+}
+
+.one-two {
+    margin: var(--div-margin);
+    padding: var(--div-padding);
+}
